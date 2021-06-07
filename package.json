@@ -1,5 +1,5 @@
 {
-  "name": "wafvel-voiceover",
+  "name": "google-tts-vo-rest-api",
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
@@ -13,8 +13,7 @@
     "@google-cloud/storage": "^5.8.5",
     "@google-cloud/text-to-speech": "^3.2.2",
     "dotenv": "^10.0.0",
-    "fastify": "^3.17.0",
-    "googleapis": "39"
+    "fastify": "^3.17.0"
   },
   "scripts": {
     "dev": "nodemon app.js",
