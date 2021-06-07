@@ -1,0 +1,15 @@
+{
+  "name": "wafvel-voiceover",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/storage": "^5.8.5",
+    "@google-cloud/text-to-speech": "^3.2.2",
+    "fastify": "^3.17.0",
+    "googleapis": "39"
+  },
+  "scripts": {
+    "dev": "nodemon app.js"
+  }
+}
