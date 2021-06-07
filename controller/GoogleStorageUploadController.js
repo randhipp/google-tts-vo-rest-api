@@ -3,12 +3,12 @@ const { Storage } = require('@google-cloud/storage');
 const keyFilename = './credentials.json'
 
 const cloudStorage = new Storage({keyFilename});
-const bucketName = 'wafvel-voiceover';
+const bucketName = process.env.BUCKET_NAME;
 
-async function upload(file) {
+async function upload(file, date, audioEncoding) {
   const stream    = require('stream'),
       dataStream  = new stream.PassThrough(),
-      gcFile      = cloudStorage.bucket(bucketName).file(+ new Date()+'.mp3')
+      gcFile      = cloudStorage.bucket(bucketName).file(date+'.'+audioEncoding)
 
   dataStream.push(file)
   dataStream.push(null)

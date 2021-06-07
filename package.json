@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
+  "author": {
+    "name": "Randhi Pratama Putra",
+    "email": "randhi.pp@gmail.com",
+    "url": "https://wafvel.com"
+  },
+  "description": "REST API for creating text to speech using Google Text To Speech API. Created using fastify.",
   "dependencies": {
     "@google-cloud/storage": "^5.8.5",
     "@google-cloud/text-to-speech": "^3.2.2",
+    "dotenv": "^10.0.0",
     "fastify": "^3.17.0",
     "googleapis": "39"
   },
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   }
 }
